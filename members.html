@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Members • Liu Lab</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23000'/><text x='50' y='58' font-size='46' text-anchor='middle' fill='%23fff' font-family='Arial'>L</text></svg>">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span>Liu Lab</span>
+      </a>
+      <button class="burger" aria-label="Toggle navigation" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
+      <nav class="menu" id="menu">
+        <a href="intro.html">Lab Introduction</a>
+        <a href="research.html">Research</a>
+        <a href="members.html">Members</a>
+        <a class="cta" href="publication.html">Publications</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <h1>Members</h1>
+    <p class="muted">Replace the placeholders below with your actual team.</p>
+    <div class="grid">
+      <div class="col-4 card">
+        <strong>Prof. Jiang Liu</strong><br/>
+        Director
+        <p class="muted">AI, wireless systems, intelligent sensing</p>
+      </div>
+      <div class="col-4 card">
+        <strong>Dr. Alex Smith</strong><br/>
+        Postdoctoral Fellow
+        <p class="muted">Robotics & V2X</p>
+      </div>
+      <div class="col-4 card">
+        <strong>Y. Tanaka</strong><br/>
+        PhD Student
+        <p class="muted">Edge AI & federated learning</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Liu Lab · Built for GitHub Pages
+    </div>
+  </footer>
+
+</body>
+</html>

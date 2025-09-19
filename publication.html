@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Publications • Liu Lab</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23000'/><text x='50' y='58' font-size='46' text-anchor='middle' fill='%23fff' font-family='Arial'>L</text></svg>">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span>Liu Lab</span>
+      </a>
+      <button class="burger" aria-label="Toggle navigation" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
+      <nav class="menu" id="menu">
+        <a href="intro.html">Lab Introduction</a>
+        <a href="research.html">Research</a>
+        <a href="members.html">Members</a>
+        <a class="cta" href="publication.html">Publications</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <h1>Publications</h1>
+    <p class="muted">Selected recent publications. Replace the samples below with your own entries (conference/journal/year). You can keep the simple HTML list or paste BibTeX blocks.</p>
+    <h2>2025</h2>
+    <ul class="list-clean">
+      <li><strong>RF-Perceive:</strong> Multimodal Fusion of Vision and RF Sensing for Robust Human Pose Estimation. <em>IEEE T-PAMI</em>, 2025.</li>
+      <li><strong>EdgeSplit:</strong> Adaptive Split Learning over 6G NTN. <em>IEEE INFOCOM</em>, 2025.</li>
+    </ul>
+    <h2>2024</h2>
+    <ul class="list-clean">
+      <li><strong>LiFiRadar:</strong> Joint Communication and Sensing with Optical Wireless Links. <em>IEEE JSAC</em>, 2024.</li>
+      <li><strong>MedTwin:</strong> Privacy-Preserving Digital Twins for Longitudinal Health. <em>NeurIPS</em>, 2024.</li>
+    </ul>
+    <div class="card">
+      <strong>BibTeX</strong>
+      <pre class="muted">
+@inproceedings{example2025edgesplit,
+  title={EdgeSplit: Adaptive Split Learning over 6G NTN},
+  author={Doe, A. and Liu, J.},
+  booktitle={IEEE INFOCOM},
+  year={2025}
+}
+      </pre>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Liu Lab · Built for GitHub Pages
+    </div>
+  </footer>
+
+</body>
+</html>

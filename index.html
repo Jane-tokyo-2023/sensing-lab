@@ -1,89 +1,76 @@
 <!doctype html>
-<ul class="list-clean">
-<li>6G/NTN prototyping with SDR/OWC rigs</li>
-<li>City-scale IoT pilots & living labs</li>
-<li>Benchmarks and datasets for sensing</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section>
+<html lang="en">
+<head>
+  <title>Liu Lab • AI • Intelligent Sensing • Robotics • Wireless</title>
+  <meta name="description" content="Liu Lab – AI, intelligent sensing, robotic algorithms, and wireless communications." />
 
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23000'/><text x='50' y='58' font-size='46' text-anchor='middle' fill='%23fff' font-family='Arial'>L</text></svg>">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 
-<!-- Members -->
-<section id="members">
-<div class="container">
-<h2>Members</h2>
-<p class="muted">A multidisciplinary team of faculty, postdocs, PhD, master’s, and undergraduate researchers. (Replace the placeholders below with your team.)</p>
-<div class="grid">
-<div class="col-4">
-<div class="card">
-<strong>Prof. Jiang Liu</strong><br/>
-Director
-<p class="muted">AI, wireless systems, intelligent sensing</p>
-</div>
-</div>
-<div class="col-4">
-<div class="card">
-<strong>Dr. Alex Smith</strong><br/>
-Postdoctoral Fellow
-<p class="muted">Robotics & V2X</p>
-</div>
-</div>
-<div class="col-4">
-<div class="card">
-<strong>Y. Tanaka</strong><br/>
-PhD Student
-<p class="muted">Edge AI & federated learning</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+</head>
+<body>
 
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span>Liu Lab</span>
+      </a>
+      <button class="burger" aria-label="Toggle navigation" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
+      <nav class="menu" id="menu">
+        <a href="intro.html">Lab Introduction</a>
+        <a href="research.html">Research</a>
+        <a href="members.html">Members</a>
+        <a class="cta" href="publication.html">Publications</a>
+      </nav>
+    </div>
+  </header>
 
-<!-- Contact -->
-<section id="contact">
-<div class="container grid">
-<div class="col-6">
-<h2>Contact</h2>
-<p class="muted">For collaboration, student inquiries, and media requests, please reach out.</p>
-<p>
-Email: <a href="mailto:example@waseda.jp">example@waseda.jp</a><br/>
-Address: 51 Bldg., Room 408A, Waseda University (replace with accurate info)
-</p>
-<p>
-<a class="cta" href="mailto:example@waseda.jp">Email the Lab</a>
-</p>
-</div>
-<div class="col-6">
-<div class="card">
-<strong>Office Hours</strong>
-<p class="muted">By appointment. Please email to schedule a meeting.</p>
-<strong>Prospective Students</strong>
-<p class="muted">Include your CV, transcript, and a short research statement.</p>
-</div>
-</div>
-</div>
-</section>
-</main>
+  <main id="top">
+    <section class="hero container">
+      <span class="pill">AI • Intelligent Sensing • Robotics • Wireless</span>
+      <h1>Integrating sensing, computing, and networking for a human–machine symbiotic society</h1>
+      <p>
+        We develop intelligent sensing systems that combine signal processing, wireless/optical communications, sensor technologies, AI/ML, and edge–cloud collaborative computing. Our work spans autonomous driving, robotics, human–machine integration, and healthcare.
+      </p>
+    </section>
 
+    <section class="container grid">
+      <div class="col-6 card">
+        <h3>What we do</h3>
+        <p class="muted">We study fundamentals and build end-to-end prototypes—bridging algorithms, hardware, and real-world deployments.</p>
+        <ul class="list-clean">
+          <li>Intelligent wireless/optical sensing and environment perception</li>
+          <li>Distributed learning and on-device inference for large-scale IoT</li>
+          <li>Ultra-reliable, low-latency links for safety-critical applications</li>
+          <li>Human-centered design: privacy, ethics, accessibility, safety</li>
+        </ul>
+      </div>
+      <div class="col-6 card">
+        <h3>Focus tags</h3>
+        <p>
+          <span class="chip">6G / NTN</span>
+          <span class="chip">V2X</span>
+          <span class="chip">Edge AI</span>
+          <span class="chip">Multimodal Sensing</span>
+          <span class="chip">Robotics</span>
+          <span class="chip">Healthcare</span>
+          <span class="chip">EMG / BCI</span>
+          <span class="chip">Federated Learning</span>
+        </p>
+      </div>
+    </section>
+  </main>
 
-<footer>
-<div class="container">
-© <span id="year"></span> Liu Lab · Built for GitHub Pages
-</div>
-</footer>
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Liu Lab · Built for GitHub Pages
+    </div>
+  </footer>
 
-
-<script>
-// current year
-document.getElementById('year').textContent = new Date().getFullYear();
-// close mobile menu on navigation click
-document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>{
-document.querySelector('.menu').classList.remove('open');
-}));
-</script>
 </body>
 </html>

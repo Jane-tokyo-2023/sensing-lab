@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Lab Introduction • Liu Lab</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23000'/><text x='50' y='58' font-size='46' text-anchor='middle' fill='%23fff' font-family='Arial'>L</text></svg>">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span>Liu Lab</span>
+      </a>
+      <button class="burger" aria-label="Toggle navigation" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
+      <nav class="menu" id="menu">
+        <a href="intro.html">Lab Introduction</a>
+        <a href="research.html">Research</a>
+        <a href="members.html">Members</a>
+        <a class="cta" href="publication.html">Publications</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <h1>Lab Introduction</h1>
+    <p class="muted">Our mission is to create robust, trustworthy, and scalable systems that fuse <strong>sensing</strong>, <strong>computing</strong>, and <strong>networking</strong>.</p>
+    <p>We are engaged in the development of <strong>intelligent sensing systems</strong> that integrate <strong>signal processing</strong>, <strong>wireless/optical communications</strong>, <strong>sensor technologies</strong>, <strong>artificial intelligence (AI)</strong>, and <strong>edge–cloud collaborative computing</strong>. We build theory and deploy real-world prototypes to close the loop between algorithms and systems.</p>
+    <h2>Highlights</h2>
+    <ul class="list-clean">
+      <li>Intelligent wireless/optical sensing and environment perception</li>
+      <li>Distributed learning and on-device inference for large-scale IoT</li>
+      <li>Ultra-reliable, low-latency connectivity for safety-critical tasks</li>
+      <li>Human-centered, privacy-preserving design and evaluation</li>
+    </ul>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Liu Lab · Built for GitHub Pages
+    </div>
+  </footer>
+
+</body>
+</html>
