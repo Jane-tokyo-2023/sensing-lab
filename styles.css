@@ -61,3 +61,51 @@ h2{font-size:1.6rem;margin:1rem 0 .4rem}
 .btn:hover{text-decoration:none;background:rgba(255,255,255,.12)}
 footer{padding:2.5rem 0;color:var(--muted)}
 .muted{color:var(--muted)}
+
+/* Email obfuscation styles */
+.email-obfuscated {
+  font-family: monospace;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+}
+
+.email-part {
+  display: inline-block;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.email-part:hover {
+  color: var(--brand);
+  cursor: pointer;
+}
+
+.email-separator {
+  display: inline-block;
+  margin: 0 1px;
+  opacity: 0.7;
+}
+
+/* Make it harder to select the entire email */
+.email-obfuscated::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Add some visual separation to make copying harder */
+.email-part:nth-child(odd) {
+  letter-spacing: 0.5px;
+}
+
+.email-part:nth-child(even) {
+  letter-spacing: -0.2px;
+}

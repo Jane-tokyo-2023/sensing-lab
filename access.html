@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Lab Introduction • Liu Lab</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23000'/><text x='50' y='58' font-size='46' text-anchor='middle' fill='%23fff' font-family='Arial'>L</text></svg>">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span>Liu Lab</span>
+      </a>
+      <button class="burger" aria-label="Toggle navigation" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
+      <nav class="menu" id="menu">
+      
+        <a href="research.html">Research</a>
+        <a href="members.html">Members</a>
+        <a href="publication.html">Publications</a>
+        <a class="cta" href="access.html">Access</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <h1>Access</h1>
+    <p class="muted">Contact information for the Liu Lab.</p>
+    
+    <div class="contact-info">
+      <h2>Contact</h2>
+        <p>
+          <strong>Professor:</strong> Jiang Liu<br>
+          <strong>Email:</strong>
+        <span class="email-obfuscated">
+          <span class="email-part" data-part="jiang">jiang</span>
+          <span class="email-separator">@</span>
+          <span class="email-part" data-part="waseda">waseda</span>
+          <span class="email-separator">.</span>
+          <span class="email-part" data-part="jp">jp</span>
+        </span>
+      </p>
+    </div>
+
+    <div class="access-info">
+      <h2>Access to Waseda University Science and Engineering Campus</h2>
+      
+      <div class="address">
+        <h3>Address</h3>
+        <p>
+          <strong>Waseda University Science and Engineering Campus (Nishi-Waseda Campus)</strong><br>
+          3-4-1 Okubo, Shinjuku-ku, Tokyo 169-8555, Japan
+        </p>
+      </div>
+
+      <div class="transportation">
+        <h3>Transportation</h3>
+        
+        <div class="train-access">
+          <h4>By Train</h4>
+          <ul>
+            <li><strong>Tokyo Metro Fukutoshin Line:</strong> Nishi-Waseda Station, Exit 3 (Waseda Science & Engineering Exit) - Direct connection</li>
+            <li><strong>JR Yamanote Line / Seibu Shinjuku Line:</strong> Takadanobaba Station - 15 minutes walk</li>
+            <li><strong>JR Yamanote Line:</strong> Shin-Okubo Station - 12 minutes walk</li>
+            <li><strong>Tokyo Metro Tozai Line:</strong> Waseda Station - 22 minutes walk</li>
+          </ul>
+        </div>
+
+        <div class="bus-access">
+          <h4>By Bus</h4>
+          <ul>
+            <li><strong>Toei Bus Routes:</strong>
+              <ul>
+                <li>Ike86: Ikebukuro Station East Exit → Shibuya Station East Exit</li>
+                <li>Wasa77: Shinjuku Station West Exit → Waseda</li>
+                <li>Kou71: Takadanobaba Station → Kudanshita</li>
+              </ul>
+              Get off at "Waseda Rikou-mae" stop - 3 minutes walk
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="campus-info">
+        <h3>Campus Information</h3>
+        <p>
+          The Science and Engineering Campus is located in the Nishi-Waseda area and houses the Faculty of Science and Engineering. 
+          The campus features modern research facilities and is easily accessible via public transportation.
+        </p>
+        <p>
+          For detailed campus maps and additional information, please visit the 
+          <a href="https://www.waseda.jp/fsci/access/" target="_blank" rel="noopener noreferrer">official Waseda University Faculty of Science and Engineering website</a>.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Liu Lab · Built for GitHub Pages
+    </div>
+  </footer>
+
+</body>
+</html>

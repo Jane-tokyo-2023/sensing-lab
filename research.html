@@ -21,10 +21,10 @@
       </a>
       <button class="burger" aria-label="Toggle navigation" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
       <nav class="menu" id="menu">
-        <a href="intro.html">Lab Introduction</a>
-        <a href="research.html">Research</a>
+        <a class="cta" href="research.html">Research</a>
         <a href="members.html">Members</a>
-        <a class="cta" href="publication.html">Publications</a>
+        <a href="publication.html">Publications</a>
+        <a href="access.html">Access</a>
       </nav>
     </div>
   </header>
@@ -32,61 +32,63 @@
   <main class="container page">
     <h1>Research</h1>
     <div class="grid">
+
       <div class="col-4 card">
-        <h3>Autonomous Systems</h3>
-        <p class="muted">Perception, mapping, and decision-making across ground vehicles and UAVs.</p>
-        <ul class="list-clean">
-          <li>Robust multimodal fusion (vision–RF–LiDAR)</li>
-          <li>Trajectory planning with safety guarantees</li>
-          <li>V2X cooperative sensing and control</li>
-        </ul>
-      </div>
-      <div class="col-4 card">
+        <!-- <img src="glucose.jpg" alt="Wireless Sensing" style="width: 50%; height: auto; border-radius: 8px;" /> -->
         <h3>Wireless Sensing</h3>
-        <p class="muted">Next-generation sensing via the communication fabric.</p>
         <ul class="list-clean">
-          <li>URLLC links; intelligent spectrum management</li>
-          <li>Optical–wireless integration (OWC, VLC, LiFi)</li>
-          <li>RF sensing for activity, presence, and vital signs</li>
-        </ul>
-      </div>
-      <div class="col-4 card">
-        <h3>Edge–Cloud AI</h3>
-        <p class="muted">Distributed learning and low-latency inference.</p>
-        <ul class="list-clean">
-          <li>Federated & split learning across devices</li>
-          <li>Resource-aware scheduling and compression</li>
-          <li>Trust, privacy, and secure aggregation</li>
-        </ul>
-      </div>
-      <div class="col-4 card">
-        <h3>Human–Machine Integration</h3>
-        <p class="muted">Wearables, EMG/EEG interfaces, and assistive robotics.</p>
-        <ul class="list-clean">
-          <li>Muscle-signal decoding for rehabilitation</li>
-          <li>BCI for intent detection and control</li>
-          <li>HRI safety and comfort modeling</li>
-        </ul>
-      </div>
-      <div class="col-4 card">
-        <h3>Healthcare AI</h3>
-        <p class="muted">Non-invasive sensing and predictive analytics.</p>
-        <ul class="list-clean">
-          <li>Contactless vitals and fall detection</li>
-          <li>Longitudinal risk modeling & digital twins</li>
-          <li>Privacy-preserving data pipelines</li>
-        </ul>
-      </div>
-      <div class="col-4 card">
-        <h3>Systems & Platforms</h3>
-        <p class="muted">Open testbeds and reproducible research.</p>
-        <ul class="list-clean">
-          <li>6G/NTN prototyping with SDR/OWC rigs</li>
-          <li>City-scale IoT pilots & living labs</li>
-          <li>Benchmarks and datasets for sensing</li>
+          <li>Intelligent spectrum management</li>
+          <li>Optical wireless sensing and communication</li>
+          <li>RF sensing for activity and vital signs</li>
+          <li>Sign Language Recognition</li>
         </ul>
       </div>
     </div>
+
+      <div class="col-4 card">
+        <!-- <img src="offloading.png" alt="Edge–Cloud AI" style="width: 50%; height: auto; border-radius: 8px;" /> -->
+        <h3>Edge–Cloud AI</h3>
+       
+        <ul class="list-clean">
+          <li>Federated learning across devices</li>
+          <li>Resource-aware scheduling and compression</li>
+        </ul>
+      </div>
+    </div>
+
+      <div class="col-4 card">
+        <!-- <img src="https://placehold.co/600x300?text=Human%E2%80%93Machine+Integration" alt="Human–Machine Integration" style="width: 100%; height: auto; border-radius: 8px;" /> -->
+        <h3>Human–Machine Integration</h3>
+        <ul class="list-clean">
+          <li>Muscle-signal decoding for rehabilitation</li>
+          <li>Intent detection and control</li>
+          <li>Safety and comfort modeling</li>
+        </ul>
+      </div>
+    </div>
+
+      <div class="col-4 card">
+      <!-- <img src="https://placehold.co/600x300?text=Healthcare+AI" alt="Healthcare AI" style="width: 100%; height: auto; border-radius: 8px;" /> -->
+      <h3>Healthcare AI</h3>
+        <ul class="list-clean">
+          <li>Contactless vitals</li>
+          <li>Tumor MRI classification</li>
+          <li>EEG time series forecasting</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-4 card">
+      <!-- <img src="https://placehold.co/600x300?text=Autonomous+Systems" alt="Autonomous Systems" style="width: 100%; height: auto; border-radius: 8px;" /> -->
+      <h3>Autonomous Systems</h3>
+      <ul class="list-clean">
+        <li>Multi-modal sensor fusion (LiDAR, radar, camera, GNSS)</li>
+        <li>Localization and Mapping</li>
+        <li>Trajectory planning with safety guarantees</li>
+        <li>Adverse weather and low-visibility perception enhancement</li>
+      </ul>
+    </div>
+  </div>
   </main>
 
   <footer>
